@@ -1,0 +1,14 @@
+@font-face{
+    font-family: norse-bold;
+    src: url(/fonts/Norse-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fontstack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    font-family: norse-bold, var(--fontstack);
+}
