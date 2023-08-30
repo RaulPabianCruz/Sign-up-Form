@@ -17,12 +17,15 @@
 
         <main>
             <div class="content-container">
-                <p>This is not a real online service! You know you need something like
-                    this in your life to help you realize your deepest dreams. Sign up 
-                    <span>now</span> to get started.</p>
-                <p>You <span>know</span> you want to.</p>
+                <div class="main-section section-1">
+                    <p>This is not a real online service! You know you need something like
+                        this in your life to help you realize your deepest dreams. Sign up 
+                        <span>now</span> to get started.</p>
+                    <p>You <span>know</span> you want to.</p>
+                </div>
 
-                <form action="#" method="get">
+
+                <form action="#" method="get" id="main-form" class="main-section section-2">
                     <h2>Let's do this!</h2>
                     <div class="form-row">
                         <div class="form-control">
@@ -56,11 +59,12 @@
                             <input type="password" id="confirm-password">
                         </div>
                     </div>
-
-                    <button>Create Account</button>
                 </form>
 
-                <p>Already have an account?<a href="#">log in</a></p>
+                <div class="main-section section-3">
+                    <button form="main-form" type="submit">Create Account</button>
+                    <p>Already have an account?<a href="#">log in</a></p>
+                </div>
             </div>
         </main>
     </body>
