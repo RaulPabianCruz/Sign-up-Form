@@ -20,9 +20,9 @@ time, mark, audio, video {
 }
 
 
-@font-face{
+@font-face {
     font-family: norse-bold;
-    src: url(/fonts/Norse-Bold.otf);
+    src: url(fonts/Norse-Bold.otf);
     font-weight: normal;
     font-style: normal;
 }
@@ -33,4 +33,40 @@ time, mark, audio, video {
 
 body {
     font-family: var(--fontstack);
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+}
+
+.img-container {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.header-container {
+    background-color: rgba(0, 0, 0, .35);
+    height: 20%;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    height: 80%;
+    width: auto;
+    flex: 0 1 auto;
+}
+
+.header-title {
+    font-family: norse-bold;
+    font-size: 5rem;
+    color: white;
+    flex: 0 1 auto;
+}
+
+main {
+    flex: 1 1 auto;
 }
