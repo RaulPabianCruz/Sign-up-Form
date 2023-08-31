@@ -29,7 +29,9 @@ time, mark, audio, video {
 
 :root {
     --fontstack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --light-gray: #f6f6f6;
+    --bg-light-gray: #f8f8f8;
+    --border-light-gray: #E5E7EB;
+    --button-green: #596D48;
 }
 
 body {
@@ -81,7 +83,7 @@ main {
 
 .section-1,
 .section-3 {
-    background-color: var(--light-gray);
+    background-color: var(--bg-light-gray);
 }
 
 .section-1{
@@ -92,12 +94,12 @@ main {
 
 .para-container {
     margin-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 50px;
     flex: 0 1 auto;
 }
 
 .para-container p{
-    width: 80%;
+    width: 700px;
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 20px;
@@ -108,5 +110,60 @@ span {
 }
 
 .section-2 {
-    
+    box-shadow: 3px 5px 10px lightgray, 0px 0px 3px lightgray;
+    margin-bottom: 10px;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2 h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.form-row {
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.form-control {
+    width: 275px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+
+label {
+    font-size: .9rem;
+}
+
+input {
+    border: 1px solid var(--border-light-gray);
+    border-radius: 5px;
+    height: 30px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.error {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 2px 2px 5px red;
+}
+
+.section-3 button{
+    margin-top: 20px;
+    background-color: var(--button-green);
 }
