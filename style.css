@@ -145,7 +145,7 @@ form {
 }
 
 label {
-    appearance: none;
+    letter-spacing: .05rem;
     font-size: .8rem;
 }
 
@@ -161,10 +161,14 @@ input:focus {
     box-shadow: 2px 2px 5px lightgray;
 }
 
+input:invalid {
+    border: 1px solid red;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
 .error {
     outline: none;
     border: 1px solid red;
-    box-shadow: 2px 2px 5px red;
 }
 
 .section-3 button {
@@ -173,8 +177,20 @@ input:focus {
     border-radius: 10px;
     border: none;
     color: white;
-    font-size: 1rem;
     background-color: var(--button-green);
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px lightgray;
+    transform: scale(1);
+    transition: scale() .2s;
+}
+
+.section-3 button:hover {
+    background-color: #6a8155;
+}
+
+.section-3 button:active {
+    transform: scale(1.01);
 }
 
 .section-3 p {
