@@ -34,10 +34,13 @@ time, mark, audio, video {
     --button-green: #596D48;
 }
 
-body {
+html {
     font-family: var(--fontstack);
     font-size: 18px;
-    height: 100vh;
+}
+
+body {
+    height: 120vh;
     display: flex;
 }
 
@@ -100,7 +103,7 @@ main {
 
 .para-container p{
     width: 700px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -121,7 +124,7 @@ form {
 }
 
 .section-2 h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-top: 20px;
 }
@@ -142,7 +145,8 @@ form {
 }
 
 label {
-    font-size: .9rem;
+    appearance: none;
+    font-size: .8rem;
 }
 
 input {
@@ -163,7 +167,22 @@ input:focus {
     box-shadow: 2px 2px 5px red;
 }
 
-.section-3 button{
-    margin-top: 20px;
+.section-3 button {
+    margin: 30px 0px 30px 40px;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1rem;
     background-color: var(--button-green);
+}
+
+.section-3 p {
+    margin-left: 40px;
+    font-size: .9rem;
+}
+
+.section-3 a {
+    font-size: .9rem;
+    color: var(--button-green);
 }
