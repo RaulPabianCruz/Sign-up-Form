@@ -133,7 +133,7 @@ form {
     width: 80%;
     margin-left: 50px;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 1 0;
 }
 
 .form-control {
@@ -144,12 +144,17 @@ form {
     flex: 0 1 auto;
 }
 
+.form-control-section {
+    flex: 1 1 0;
+}
+
 label {
     letter-spacing: .05rem;
     font-size: .8rem;
 }
 
 input {
+    font-size: 1rem;
     border: 1px solid var(--border-light-gray);
     border-radius: 5px;
     height: 30px;
@@ -166,10 +171,23 @@ input:invalid {
     box-shadow: 2px 2px 5px lightgray;
 }
 
+input:invalid + div::before {
+    font-size: .65rem;
+    font-style: italic;
+    color: red;
+    content: "Field is required";
+}
+
+input[type="password"]:invalid + div::before {
+    content: "Password requires 1 uppercase and 1 digit";
+}
+
+/*  will use with javascript validation in the future
 .error {
     outline: none;
     border: 1px solid red;
 }
+*/
 
 .section-3 button {
     margin: 30px 0px 30px 40px;
